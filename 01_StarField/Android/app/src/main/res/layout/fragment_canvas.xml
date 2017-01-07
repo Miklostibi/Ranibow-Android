@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/canvasLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/settingsContainer" />
+
+
+    <LinearLayout
+        android:id="@+id/settingsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/md_grey_800"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/speedSeeker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+        <SeekBar
+            android:id="@+id/starsToShowSeeker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/draw_fragment_pb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_circle_gray_opaque"
+        android:indeterminate="true"
+        android:padding="3dp" />
+
+</RelativeLayout>
